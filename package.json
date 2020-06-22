@@ -1,0 +1,19 @@
+{
+  "name": "rxisavalonschudule",
+  "version": "0.0.1",
+  "description": "A discord bot to schedule and manage avalon dgs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlavioMalvestitiJunior/RXISAvalonSchudule.git"
+  },
+  "author": "Flavio Malvestiti Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlavioMalvestitiJunior/RXISAvalonSchudule/issues"
+  },
+  "homepage": "https://github.com/FlavioMalvestitiJunior/RXISAvalonSchudule#readme"
+}
