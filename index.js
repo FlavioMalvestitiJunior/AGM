@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World! neow in'+process.env.PORT);
+  res.send('Hello World! Avalonian Scheduler');
 });
 
 app.listen(process.env.PORT, function () {
