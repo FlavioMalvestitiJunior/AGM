@@ -4,7 +4,8 @@
   "description": "A discord bot to schedule and manage avalon dgs",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/FlavioMalvestitiJunior/RXISAvalonSchudule/issues"
   },
-  "homepage": "https://github.com/FlavioMalvestitiJunior/RXISAvalonSchudule#readme"
+  "homepage": "https://github.com/FlavioMalvestitiJunior/RXISAvalonSchudule#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
