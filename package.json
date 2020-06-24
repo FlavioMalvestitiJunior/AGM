@@ -4,7 +4,7 @@
   "description": "A discord bot to schedule and manage avalon dgs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ."
   },
   "repository": {
     "type": "git",
