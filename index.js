@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 const discord = require('discord.js')
-const discordConfig = require('./config.js')
+const discordConfig = require('./config.json')
 const discordClient = new discord.Client();
 
 let lastCommand = ''
