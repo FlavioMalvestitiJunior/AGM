@@ -7,7 +7,7 @@ const discordClient = new discord.Client();
 let lastCommand = ''
 
 app.get('/', function (req, res) {
-  res.send('ArchMaga Last Command: ' + lastCommand);
+  res.send('ArchMage Last Command: ' + lastCommand);
 });
 
 app.listen(process.env.PORT, function () {
