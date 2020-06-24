@@ -23,3 +23,5 @@ discordClient.on('message', async (message) =>{
   if(message.channel.type === 'dm') return;
   lastCommand = message.content
 })
+
+discordClient.login(process.env.BOT_TOKEN)
