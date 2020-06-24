@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/ce01042c-bfcc-460a-be27-8a0af2a5e7d6/resourceGroups/rxisavalonschudulegroup/providers/Microsoft.Web/sites/rxisavalonschudule"
+}
