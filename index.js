@@ -7,7 +7,7 @@ const discordClient = new discord.Client();
 let lastCommand = ''
 
 app.get('/', function (req, res) {
-  res.send('Hello World! Avalonian Scheduler Now On heroku ' + lastCommand);
+  res.send('ArchMaga Last Command: ' + lastCommand);
 });
 
 app.listen(process.env.PORT, function () {
@@ -18,10 +18,12 @@ discordClient.on('ready', () => {
   console.log(`Bot users, ${discordClient.channels.size}, canais: ${discordClient.channels.size}, Servers: ${discordClient.guilds.size}`)
 })
 
-discordClient.on('message', async (message) =>{
-  if(message.author.bot) return;
-  if(message.channel.type === 'dm') return;
-  lastCommand = message.content
+discordClient.on('message', async (message) => {
+  if (message.author.bot) return;
+  if (message.channel.type === 'dm') return;
+  if (message.content.toLowerCase().startsWith(discordConfig.prefix)) {
+    lastCommand = message.content
+  }
 })
 
 discordClient.login(process.env.BOT_TOKEN)
