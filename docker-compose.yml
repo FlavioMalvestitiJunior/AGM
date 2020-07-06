@@ -1,0 +1,26 @@
+version: '3.2'
+services:
+    archmage:
+        build: .
+        ports:
+            - "3000:3000"
+        volumes:
+            - ".:/opt"
+        working_dir: /opt
+        command: npm run start
+        env_file:
+            - archmage.env
+        networks:
+            - internal
+
+    postgres:
+        image: postgres
+        env_file:
+            - archmage.env
+        ports:
+            - "5432:5432"
+        networks:
+            - internal
+
+networks:
+    internal:

@@ -1,3 +1,5 @@
 {
-    "prefix": "!archmage"
+    "discordService": {
+        "prefix": "!archmage"
+    }
 }
