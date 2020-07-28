@@ -1,10 +1,10 @@
-const core = require('./core')
-const apiService = require('./apiService')
-const discordService = require('./discordService')
+const core = require('./app/core')
+const apiService = require('./app/apiService')
+const discordService = require('./app/discordService')
 
 core.startDBConnection().then(() => {
-    apiService.startServer()
-    discordService.startDiscordBot()
+  apiService.startServer()
+  discordService.startDiscordBot()
 }).catch((error) => {
-    console.error(error)
+  console.error(error)
 })
