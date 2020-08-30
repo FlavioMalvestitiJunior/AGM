@@ -1,5 +1,3 @@
-/* jshint indent: 1 */
-
 module.exports = (sequelize, DataTypes) => {
   const users = sequelize.define('users', {
     discordUserId: {
@@ -28,6 +26,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.JSONB,
       allowNull: false,
       field: 'user_guilds'
+    },
+    userStrikes: {
+      type: DataTypes.JSONB,
+      allowNull: false,
+      field: 'user_strikes'
     }
   }, {
     tableName: 'users'

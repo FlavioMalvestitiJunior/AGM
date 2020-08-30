@@ -1,4 +1,7 @@
-const { getGuild, getGuilds } = require('../../albionApi')
+const { getGuild } = require('../../albionApi')
+const { validate } = require('jsonschema')
+const GuildConfigurationsSchema = require('../../../schemas/GuildConfigurations.json')
+const GuildSchema = require('../../../schemas/GuildConfigurations.json')
 
 function registerGuild (guild) {
   const guildName = guild.guildName
@@ -10,15 +13,6 @@ function registerGuild (guild) {
   })
 }
 
-function updateGuildConfigs (guildID, configs) {
-  return getGuildByID(guildID).then((guild) => {
-    guild.guildConfig = Object.assign(guild.guildConfig, configs)
-    guild.changed('guildConfig', true)
-    return guild.save()
-  })
-}
-
 module.exports = {
-  updateGuildConfigs,
   registerGuild
 }

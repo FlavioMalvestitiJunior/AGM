@@ -16,7 +16,8 @@ function _createGuestGuild (guests) {
       newGuests.push({
         id: guild.Id,
         nick: guestGuild.nick,
-        name: guild.Name
+        name: guild.Name,
+        roles: guestGuild.roles
       })
       return newGuests
     }, [])

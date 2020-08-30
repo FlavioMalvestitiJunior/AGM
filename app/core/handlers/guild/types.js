@@ -3,11 +3,11 @@
  * @property {String} id guild albion Id.
  * @property {String} nick guild nick abreviation.
  * @property {String} name guild name.
+ * @property {String[]} roles guild players roles.
  */
 /**
  * @typedef GuildConfigurations guild configs object
  * @property {String[]} newMemberRole roles to add for new members register.
- * @property {String[]} newGuestRoles roles to add for new members for another guilds register.
  * @property {guest[]} guests guilds guest, members of this guilds can register and enter automaticaly in discord.
  */
 /**

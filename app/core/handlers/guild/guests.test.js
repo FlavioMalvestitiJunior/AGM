@@ -9,15 +9,18 @@ describe('Guild Guests Add guest guild', () => {
     const guestsA = [
       {
         nick: 'AC',
-        name: 'Awful Company'
+        name: 'Awful Company',
+        roles: ['guest']
       },
       {
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest', 'Ally']
       },
       {
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -25,19 +28,22 @@ describe('Guild Guests Add guest guild', () => {
       {
         id: 'PXoTzIfIQ9y_-EUjKQQvVA',
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest', 'Ally']
       },
       {
         id: 'fcypjM0JQHi-YPR3stQ7lw',
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
     const expectedDifference = [
       {
         nick: 'AC',
-        name: 'Awful Company'
+        name: 'Awful Company',
+        roles: ['guest']
       }
     ]
     const processedDifference = require('./guests')._differenceGuests(guestsA, guestsB)
@@ -49,11 +55,13 @@ describe('Guild Guests Add guest guild', () => {
     const guestsA = [
       {
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       },
       {
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -61,12 +69,14 @@ describe('Guild Guests Add guest guild', () => {
       {
         id: 'PXoTzIfIQ9y_-EUjKQQvVA',
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       },
       {
         id: 'fcypjM0JQHi-YPR3stQ7lw',
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -82,7 +92,8 @@ describe('Guild Guests Add guest guild', () => {
         guests: [{
           id: '61yii28pRoWZXbNnkk4rUw',
           nick: 'AC',
-          name: 'Awful Company'
+          name: 'Awful Company',
+          roles: ['guest']
         }]
       },
       changed: sinon.stub(),
@@ -92,11 +103,13 @@ describe('Guild Guests Add guest guild', () => {
     const newGuests = [
       {
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       },
       {
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -104,17 +117,20 @@ describe('Guild Guests Add guest guild', () => {
       {
         id: '61yii28pRoWZXbNnkk4rUw',
         nick: 'AC',
-        name: 'Awful Company'
+        name: 'Awful Company',
+        roles: ['guest']
       },
       {
         id: 'PXoTzIfIQ9y_-EUjKQQvVA',
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       },
       {
         id: 'fcypjM0JQHi-YPR3stQ7lw',
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -154,7 +170,8 @@ describe('Guild Guests Add guest guild', () => {
         guests: [{
           id: '61yii28pRoWZXbNnkk4rUw',
           nick: 'AC',
-          name: 'Awful Company'
+          name: 'Awful Company',
+          roles: ['guest']
         }]
       },
       changed: sinon.stub(),
@@ -164,11 +181,13 @@ describe('Guild Guests Add guest guild', () => {
     const newGuests = [
       {
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       },
       {
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -176,12 +195,14 @@ describe('Guild Guests Add guest guild', () => {
       {
         id: '61yii28pRoWZXbNnkk4rUw',
         nick: 'AC',
-        name: 'Awful Company'
+        name: 'Awful Company',
+        roles: ['guest']
       },
       {
         id: 'PXoTzIfIQ9y_-EUjKQQvVA',
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       }
     ]
 
@@ -216,7 +237,8 @@ describe('Guild Guests Add guest guild', () => {
         guests: [{
           id: '61yii28pRoWZXbNnkk4rUw',
           nick: 'AC',
-          name: 'Awful Company'
+          name: 'Awful Company',
+          roles: ['guest']
         }]
       },
       changed: sinon.stub(),
@@ -226,11 +248,13 @@ describe('Guild Guests Add guest guild', () => {
     const newGuests = [
       {
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       },
       {
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -238,12 +262,14 @@ describe('Guild Guests Add guest guild', () => {
       {
         id: '61yii28pRoWZXbNnkk4rUw',
         nick: 'AC',
-        name: 'Awful Company'
+        name: 'Awful Company',
+        roles: ['guest']
       },
       {
         id: 'PXoTzIfIQ9y_-EUjKQQvVA',
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       }
     ]
 
@@ -278,7 +304,8 @@ describe('Guild Guests Add guest guild', () => {
         guests: [{
           id: '61yii28pRoWZXbNnkk4rUw',
           nick: 'AC',
-          name: 'Awful Company'
+          name: 'Awful Company',
+          roles: ['guest']
         }]
       },
       changed: sinon.stub(),
@@ -288,17 +315,20 @@ describe('Guild Guests Add guest guild', () => {
     const newGuests = [
       {
         nick: 'MRG',
-        name: 'Merge'
+        name: 'Merge',
+        roles: ['guest']
       }, {
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
     const notFoundGuest = [
       {
         nick: 'JAG',
-        name: 'Just a Game'
+        name: 'Just a Game',
+        roles: ['guest']
       }
     ]
 
@@ -335,7 +365,8 @@ describe('Guild Guests Remove guest guild', () => {
         guests: [{
           id: '61yii28pRoWZXbNnkk4rUw',
           nick: 'AC',
-          name: 'Awful Company'
+          name: 'Awful Company',
+          roles: ['guest']
         }]
       },
       changed: sinon.stub(),
@@ -352,7 +383,8 @@ describe('Guild Guests Remove guest guild', () => {
     const expectedRemovedGuests = [{
       id: '61yii28pRoWZXbNnkk4rUw',
       nick: 'AC',
-      name: 'Awful Company'
+      name: 'Awful Company',
+      roles: ['guest']
     }]
 
     const guildQuery = {
@@ -377,7 +409,8 @@ describe('Guild Guests Remove guest guild', () => {
         guests: [{
           id: '61yii28pRoWZXbNnkk4rUw',
           nick: 'AC',
-          name: 'Awful Company'
+          name: 'Awful Company',
+          roles: ['guest']
         }]
       },
       changed: sinon.stub(),
